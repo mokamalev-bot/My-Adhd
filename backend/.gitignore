@@ -1,0 +1,4 @@
+# Backend secrets and local configuration
+.env
+node_modules/
+dist/
