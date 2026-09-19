@@ -1,37 +1,27 @@
 # My ADHD
 
-A simple project for tracking habits, routines, and focus support for people managing ADHD.
+My ADHD is a multilingual Android support app for time management, task organization, focus, routines, and behavioral self-management.
 
-## Overview
+> This app provides educational and organizational support. It does not diagnose ADHD, prescribe medication, or replace a qualified healthcare professional.
 
-This repository is intended to help organize daily tasks, build consistent routines, and provide a lightweight personal system for monitoring focus, energy, and progress.
+## Phase 2
 
-## Goals
+- Kotlin + Jetpack Compose + Material 3
+- English and Arabic localization with RTL support
+- First-run onboarding and language selection
+- Local task storage with Room
+- Add, complete, and delete tasks
+- Focus timer with selectable durations
+- Bottom navigation: Home, Tasks, Focus, Profile
+- No API keys or medical decisions in the Android client
 
-- Reduce overwhelm with structured daily planning
-- Track habits and routines consistently
-- Support focus and time management
-- Make it easier to reflect on what works best
+## Build
 
-## Features
+1. Open the repository in Android Studio (JDK 17).
+2. Allow Gradle to sync.
+3. Run the `app` configuration on an Android device or emulator.
+4. Build a debug APK with `./gradlew assembleDebug`.
 
-- Daily task tracking
-- Habit and routine check-ins
-- Focus and energy logging
-- Personalized productivity workflows
-- Simple, easy-to-use structure for ongoing improvement
+## Safety
 
-## Getting Started
-
-1. Clone the repository
-2. Open the project in your preferred editor
-3. Install dependencies if needed
-4. Run the app or project scripts
-
-## Project Status
-
-This is a starter project and is currently being developed.
-
-## License
-
-This project does not currently include a license file.
+The application is a support and organization tool. It must not diagnose ADHD, recommend or prescribe medication, claim to cure ADHD, or replace professional care. Future AI features must use a secure backend gateway and safety validation.
