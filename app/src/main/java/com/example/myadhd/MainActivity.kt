@@ -8,16 +8,21 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.myadhd.ui.theme.MyAdhdTheme
-import com.example.myadhd.ui.viewmodel.TaskViewModel
 import com.example.myadhd.ui.AppRoot
+import com.example.myadhd.ui.theme.MyAdhdTheme
+import com.example.myadhd.ui.viewmodel.PreferencesViewModel
+import com.example.myadhd.ui.viewmodel.TaskViewModel
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(state: Bundle?) {
         super.onCreate(state)
         enableEdgeToEdge()
         setContent {
-            MyAdhdTheme { Surface(Modifier.fillMaxSize()) { AppRoot(viewModel()) } }
+            val preferences = viewModel<PreferencesViewModel>()
+            val tasks = viewModel<TaskViewModel>()
+            MyAdhdTheme(darkTheme = preferences.preferences.value.darkMode) {
+                Surface(Modifier.fillMaxSize()) { AppRoot(tasks, preferences) }
+            }
         }
     }
 }
