@@ -1,0 +1,3 @@
+<resources>
+<string name="assistant">المساعد</string><string name="assistant_disclaimer">مساعد عملي للتنظيم، وليس طبيبًا أو خدمة طوارئ.</string><string name="assistant_hint">ما الشيء الذي تريد جعله أسهل؟</string><string name="send">إرسال</string><string name="ai_diagnosis_response">يمكنني تقديم معلومات عن الفحص، لكن لا أستطيع تشخيص ADHD.</string><string name="ai_medication_response">قرارات الأدوية يجب أن تكون مع مختص رعاية صحية مؤهل.</string><string name="ai_crisis_response">يرجى الاتصال بخدمات الطوارئ المحلية أو بشخص موثوق قريب منك الآن.</string>
+</resources>

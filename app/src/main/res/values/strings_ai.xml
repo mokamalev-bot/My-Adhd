@@ -1,0 +1,3 @@
+<resources>
+<string name="assistant">Assistant</string><string name="assistant_disclaimer">A practical organization companion—not a doctor or emergency service.</string><string name="assistant_hint">What would you like to make easier?</string><string name="send">Send</string><string name="ai_diagnosis_response">I can provide screening information, but I cannot diagnose ADHD.</string><string name="ai_medication_response">Medication decisions belong with a qualified healthcare professional.</string><string name="ai_crisis_response">Please contact local emergency services or a trusted person nearby now.</string>
+</resources>
