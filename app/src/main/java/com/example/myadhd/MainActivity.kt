@@ -10,6 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.myadhd.ui.AppRoot
 import com.example.myadhd.ui.theme.MyAdhdTheme
+import com.example.myadhd.ui.viewmodel.CheckInViewModel
 import com.example.myadhd.ui.viewmodel.HabitViewModel
 import com.example.myadhd.ui.viewmodel.PreferencesViewModel
 import com.example.myadhd.ui.viewmodel.TaskViewModel
@@ -22,8 +23,9 @@ class MainActivity : ComponentActivity() {
             val preferences = viewModel<PreferencesViewModel>()
             val tasks = viewModel<TaskViewModel>()
             val habits = viewModel<HabitViewModel>()
+            val checkIns = viewModel<CheckInViewModel>()
             MyAdhdTheme(darkTheme = preferences.preferences.value.darkMode) {
-                Surface(Modifier.fillMaxSize()) { AppRoot(tasks, habits, preferences) }
+                Surface(Modifier.fillMaxSize()) { AppRoot(tasks, habits, checkIns, preferences) }
             }
         }
     }
